@@ -1,0 +1,55 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="Back">
+      <i c="1" l="1635657064286" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="324" l="1635755403783" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="1" l="1635659504512" />
+    </e>
+    <e n="EditorEnter">
+      <i c="3" l="1635693568594" />
+    </e>
+    <e n="EditorLeft">
+      <i c="17" l="1635755397328" />
+    </e>
+    <e n="EditorRight">
+      <i c="26" l="1635755399654" />
+    </e>
+    <e n="EditorTab">
+      <i c="10" l="1635753630151" />
+    </e>
+    <e n="Forward">
+      <i c="1" l="1635657065383" />
+    </e>
+    <e n="NewClass">
+      <i c="1" l="1635585139260" />
+    </e>
+    <e n="RunAnything">
+      <i c="1" l="1635755381682" />
+    </e>
+    <e n="SaveAll">
+      <i c="2" l="1635753656308" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="4" l="1635745686266" />
+    </e>
+    <e n="ShowSettings">
+      <i c="67" l="1635751444616" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="1" l="1635585090462" />
+    </e>
+    <e n="com.intellij.diagnostic.IdeMessagePanel$4">
+      <i c="1" l="1635585102877" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1635585228102" />
+    </e>
+    <e n="com.intellij.openapi.vfs.encoding.ChooseFileEncodingAction$1">
+      <i c="2" l="1635607131616" />
+    </e>
+  </component>
+</application>

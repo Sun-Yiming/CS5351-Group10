@@ -1,0 +1,60 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/untitled">
+          <value>
+            <RecentProjectMetaInfo frameTitle="untitled – A.java" opened="true" projectWorkspaceId="20DhWZqDCKVKLGzg6dn5e8Cs4Wu">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-213.5449.25" />
+              <option name="buildTimestamp" value="1635348504049" />
+              <option name="eap" value="true" />
+              <frame x="183" y="-22" width="1750" height="980" extendedState="6" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1635585098857" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="groups">
+      <list>
+        <ProjectGroup>
+          <option name="bottomGroup" value="true" />
+          <option name="name" value="Eclipse Projects" />
+          <option name="projects">
+            <list>
+              <option value="D:\eclipse projects\BookingSystem" />
+              <option value="D:\eclipse projects\aaa" />
+              <option value="D:\eclipse projects\BookingSystem2" />
+              <option value="D:\eclipse projects\project1" />
+              <option value="D:\eclipse projects\WS5-Heaps" />
+              <option value="D:\eclipse projects\home_party" />
+              <option value="D:\eclipse projects\Lab1" />
+              <option value="D:\eclipse projects\Algorithms" />
+              <option value="D:\eclipse projects\CGproject1" />
+              <option value="D:\eclipse projects\BlueBridge" />
+              <option value="D:\eclipse projects\LeetCode" />
+              <option value="D:\eclipse projects\Security_and_Privacy" />
+              <option value="D:\eclipse projects\test" />
+              <option value="D:\eclipse projects\adasdads" />
+              <option value="D:\eclipse projects\Graph" />
+              <option value="D:\eclipse projects\WS1-Trees-2019" />
+              <option value="D:\eclipse projects\chain of responsible pattern" />
+              <option value="D:\eclipse projects\DP" />
+              <option value="D:\eclipse projects\Assignment2-Source" />
+              <option value="D:\eclipse projects\JUC_learning" />
+              <option value="D:\eclipse projects\Assignment1-Source" />
+              <option value="D:\eclipse projects\WS4-Binary-Tree-Internal" />
+              <option value="D:\eclipse projects\Assignment2" />
+              <option value="D:\eclipse projects\Assignment3" />
+              <option value="D:\eclipse projects\JVMlearning" />
+              <option value="D:\eclipse projects\Assignment1" />
+            </list>
+          </option>
+        </ProjectGroup>
+      </list>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/IdeaProjects" />
+  </component>
+</application>
