@@ -16,7 +16,7 @@ Zihao Wei			54774508
 
 
 
-#=============================================
+**=============================================**
 
 function introduntion
 
@@ -31,27 +31,27 @@ this plugin mainly has 3 main function:
   
   for example:
     
-  /#red   -->  #FF0000
+  **#red   -->  #FF0000**
   
 3. Automic annotation translation
 
   when you need to input any English annotations, you can input "#" first, then input the content in Chinese, finally press the "space"
   
-  #这是一个函数  -->  #this is a function 
+  **#这是一个函数  -->  #this is a function **
   
   
   
-+Extra function: personalization setting
+Extra function: personalization setting
 
   you can click "file--> setting" to check the setting, main functions include:
   1. set the matching rule of punctuation translation and color RGB translation
   2. click the "reset" button to go back to the initial status
 
-#=============================================
+**=============================================
+**
 
 
-
-#install step
+install step
 this prject is a plugin of the IDEA, there are two running appoarches for this preject.
 
 Method 1:
