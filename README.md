@@ -18,7 +18,7 @@ Zihao Wei			54774508
 
 **=============================================**
 
-function introduntion
+# function introduntion
 
 this plugin mainly has 3 main function:
 1. Automic Chinese punctuation translation
