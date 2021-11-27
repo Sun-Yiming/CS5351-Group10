@@ -54,7 +54,7 @@ Extra function: personalization setting
 
 
 
-install step
+# install step
 
 this prject is a plugin of the IDEA, there are two running appoarches for this preject.
 
