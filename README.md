@@ -51,7 +51,11 @@ Extra function: personalization setting
 **
 
 
+
+
+
 install step
+
 this prject is a plugin of the IDEA, there are two running appoarches for this preject.
 
 Method 1:
@@ -60,7 +64,7 @@ Method 1:
 3. then you can use the functions when you are coding
 
 However, since we did not do the IDEA version compatible，we can not make sure that all the version of IDEA can use our plugin.
-If you meet any question about IDEA version compatiabe, you can test the  approach 2
+If you meet any question about IDEA version compatiabe, you can test the  approach 2.
 
 Method 2:
 1. import the whole project into your IDEA as a project.
