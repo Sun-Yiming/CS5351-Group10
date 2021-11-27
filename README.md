@@ -31,13 +31,13 @@ this plugin mainly has 3 main function:
   
   for example:
     
-  **#red   -->  #FF0000**
+ > **#red   -->  #FF0000**
   
 3. Automic annotation translation
 
   when you need to input any English annotations, you can input "#" first, then input the content in Chinese, finally press the "space"
   
-  **#这是一个函数  -->  #this is a function **
+ > **#这是一个函数  -->  #this is a function **
   
   
   
