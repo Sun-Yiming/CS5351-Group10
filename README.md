@@ -20,6 +20,33 @@ Zihao Wei			54774508
 
 function introduntion
 
+this plugin mainly has 3 main function:
+1. Automic Chinese punctuation translation
+  
+  when the system input method is Chinese, the editor can still show the punctuation in English.
+
+2. Automic color RGB translation
+
+  when you need to input a color RGB code, such as #000000(BLACK), you can input the "#", then input the color name, then press "space"
+  
+  for example:
+    
+  /#red   -->  #FF0000
+  
+3. Automic annotation translation
+
+  when you need to input any English annotations, you can input "#" first, then input the content in Chinese, finally press the "space"
+  
+  #这是一个函数  -->  #this is a function 
+  
+  
+  
++Extra function: personalization setting
+
+  you can click "file--> setting" to check the setting, main functions include:
+  1. set the matching rule of punctuation translation and color RGB translation
+  2. click the "reset" button to go back to the initial status
+
 #=============================================
 
 
