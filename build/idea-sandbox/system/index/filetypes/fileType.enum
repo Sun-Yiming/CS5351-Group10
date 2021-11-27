@@ -1,12 +1,10 @@
 JAVA
-XML
-GitIgnore file
-IDEA_MODULE
-DTD
 RNG Compact
 PATCH
+XML
 textmate
 PLAIN_TEXT
+DTD
 JSON
 Shell Script
 XHTML
@@ -19,6 +17,8 @@ SPI
 Properties
 CSS
 JavaScript
+IDEA_MODULE
+GitIgnore file
 script-definition-marker
 Kotlin
 Shrinker Config File

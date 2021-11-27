@@ -2756,7 +2756,6 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="com.intellij.css" pluginName="CSS Support" bundled="true" />
-                <plugin pluginId="com.intellij.css" />
               </dataSet>
             </plugins>
           </entry>
@@ -8185,6 +8184,7 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="org.mule.tooling.intellij.raml" />
+                <plugin pluginId="org.mule.tooling.intellij.dataweave.v2" />
               </dataSet>
             </plugins>
           </entry>
@@ -8287,6 +8287,13 @@
                 <plugin pluginId="org.xuxiake.ideaToolCollection" />
                 <plugin pluginId="com.hjf.redis.manager.redis-manager" />
                 <plugin pluginId="org.xuxiake.ideaToolCollection.castration" />
+              </dataSet>
+            </plugins>
+          </entry>
+          <entry key="*.rediscli">
+            <plugins>
+              <dataSet>
+                <plugin pluginId="com.cap.plugin.redis" />
               </dataSet>
             </plugins>
           </entry>
@@ -10978,6 +10985,7 @@
             <plugins>
               <dataSet>
                 <plugin pluginId="se.clau.yang" />
+                <plugin pluginId="tech.pantheon.yanginator" />
               </dataSet>
             </plugins>
           </entry>
@@ -12509,31 +12517,5 @@
         <option name="path" value="$APPLICATION_HOME_DIR$/plugins/textmate/lib/bundles/yaml" />
       </BundleConfigBean>
     </bundles>
-  </component>
-  <component name="shared-index-download-history">
-    <option name="entries">
-      <entry>
-        <option name="indexId" value="36631a56301bada3c4a8abdcf79590a52ea7d681d28b629928122bb0fac575f5#Oracle OpenJDK version 1.8.0_231" />
-        <option name="indexKind" value="jdk" />
-        <option name="lastDeliveredChunkUniqueId" value="1.8.0_312-corretto-1.8.0_312-c5ac637cd6ef3e3ddc3706ce4228f271b3752fae55fc007909370c6514f5c831-2b2044c523b6" />
-        <option name="lastDownloadDate" value="2021-11-01T16:12:47.6834034+08:00[GMT+08:00]" />
-        <option name="lastDownloadSize" value="25150844" />
-      </entry>
-    </option>
-  </component>
-  <component name="shared-index-jdk-hash">
-    <option name="entries">
-      <entry>
-        <option name="aliases">
-          <list>
-            <option value="1.8.0_231" />
-            <option value="1.8" />
-          </list>
-        </option>
-        <option name="hash" value="c61aa1fde2ef92a897f2ebf0d23e80471db1f6b1" />
-        <option name="name" value="1.8" />
-        <option name="snapshotHash" value="44c2ab6cb7899b68cae2eb8487399e5e03df4b91c431db7446598dc22db195fa" />
-      </entry>
-    </option>
   </component>
 </application>

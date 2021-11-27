@@ -6,7 +6,7 @@
   <description>更改中文字符为英文字符，因为至少40个字所以11111111111111111111111111111111111111111111111111111</description>
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-  <idea-version since-build="213.5449" until-build="213.*" />
+  <idea-version since-build="213.5744" until-build="213.*" />
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->

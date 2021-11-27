@@ -1,14 +1,23 @@
 ColorComponent.java
  ColorComponent
-Component.java
- Component
-CharComponent.java
- CharComponent
 MyAction.java
  MyAction
+AbstractFactory.java
+ AbstractFactory
 CnCharSettingComponent.java
  CnCharSettingComponent
  CnCharSettingComponent$1
  CnCharSettingComponent$2
 CharacterReplaceHandler.java
  CharacterReplaceHandler
+Translate.java
+ GT
+ Translate
+ColorComponentFactory.java
+ ColorComponentFactory
+Component.java
+ Component
+CharComponent.java
+ CharComponent
+CharComponentFactory.java
+ CharComponentFactory

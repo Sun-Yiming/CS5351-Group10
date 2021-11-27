@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public interface Component {
     JLabel getDefaultBnt();
-    void init(JBScrollPane jPanel);
+    void init(JPanel jPanel);
     void setApply(String string);
     String getCurrentString();
 }

@@ -1,55 +1,73 @@
 <application>
   <component name="ActionsLocalSummary">
-    <e n="Back">
-      <i c="1" l="1635657064286" />
+    <e n="$Undo">
+      <i c="6" l="1637840218403" />
+    </e>
+    <e n="CommentByLineComment">
+      <i c="2" l="1637839262805" />
     </e>
     <e n="EditorBackSpace">
-      <i c="324" l="1635755403783" />
+      <i c="667" l="1637912007037" />
     </e>
     <e n="EditorChooseLookupItem">
-      <i c="1" l="1635659504512" />
+      <i c="13" l="1637909933223" />
+    </e>
+    <e n="EditorCopy">
+      <i c="2" l="1637839532593" />
+    </e>
+    <e n="EditorDown">
+      <i c="52" l="1637839492379" />
     </e>
     <e n="EditorEnter">
-      <i c="3" l="1635693568594" />
+      <i c="56" l="1637918212393" />
     </e>
     <e n="EditorLeft">
-      <i c="17" l="1635755397328" />
+      <i c="101" l="1637911986697" />
+    </e>
+    <e n="EditorPaste">
+      <i c="5" l="1637839533185" />
     </e>
     <e n="EditorRight">
-      <i c="26" l="1635755399654" />
+      <i c="89" l="1637909934176" />
     </e>
     <e n="EditorTab">
-      <i c="10" l="1635753630151" />
+      <i c="17" l="1637911899281" />
     </e>
-    <e n="Forward">
-      <i c="1" l="1635657065383" />
+    <e n="EditorUnindentSelection">
+      <i c="2" l="1637397228845" />
+    </e>
+    <e n="EditorUp">
+      <i c="13" l="1637839490471" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="3" l="1637838894436" />
     </e>
     <e n="NewClass">
-      <i c="1" l="1635585139260" />
+      <i c="2" l="1637495030966" />
     </e>
-    <e n="RunAnything">
-      <i c="1" l="1635755381682" />
+    <e n="NewProject">
+      <i c="1" l="1637153935281" />
+    </e>
+    <e n="RenameFile">
+      <i c="1" l="1637839538181" />
     </e>
     <e n="SaveAll">
-      <i c="2" l="1635753656308" />
+      <i c="2" l="1637839449410" />
     </e>
-    <e n="ShowProjectStructureSettings">
-      <i c="4" l="1635745686266" />
+    <e n="ShowIntentionActions">
+      <i c="4" l="1637839547574" />
     </e>
     <e n="ShowSettings">
-      <i c="67" l="1635751444616" />
+      <i c="28" l="1637911997991" />
+    </e>
+    <e n="Tree-selectChild">
+      <i c="1" l="1637917654147" />
     </e>
     <e n="WelcomeScreen.CreateNewProject">
-      <i c="1" l="1635585090462" />
+      <i c="1" l="1637153909267" />
     </e>
-    <e n="com.intellij.diagnostic.IdeMessagePanel$4">
-      <i c="1" l="1635585102877" />
-    </e>
-    <e n="com.intellij.notification.NotificationAction$Simple">
-      <i c="1" l="1635585228102" />
-    </e>
-    <e n="com.intellij.openapi.vfs.encoding.ChooseFileEncodingAction$1">
-      <i c="2" l="1635607131616" />
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="3" l="1637839452443" />
     </e>
   </component>
 </application>

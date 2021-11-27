@@ -172,6 +172,21 @@
       }
     }
   }, {
+    "id" : "balloons",
+    "builds" : [ ],
+    "versions" : [ {
+      "from" : "2"
+    } ],
+    "rules" : {
+      "event_id" : [ "{enum:balloon.shown}" ],
+      "event_data" : {
+        "balloon_id" : [ "{enum#__balloon_id}" ]
+      },
+      "enums" : {
+        "__balloon_id" : [ "cwm.telephony.text_message", "cwm.host.session.nmins_left", "cwm.telephony.participant_enabled_video", "cwm.host.permanent_link.created", "cwm.host.permanent_link.see_logs", "cwm.host.connection.version_mismatch_error", "cwm.host.permanent_link.url", "cwm.host.action.getjoinlink.link_copied", "cwm.permissions.accept_deny", "cwm.host.action.сopyjoinlink.link_copied", "cwm.following.started", "cwm.host.terminal.shared.status", "cwm.host.connection.user_left", "cwm.telephony.customize_audio_video_settings", "cwm.host.connection.user_joined", "cwm.following.request", "cwm.guest.telephony.voice_chat_enabled" ]
+      }
+    }
+  }, {
     "id" : "bookmarks",
     "builds" : [ ],
     "versions" : [ {
@@ -323,7 +338,7 @@
         "plugin_version" : [ "{util#plugin_version}" ]
       },
       "enums" : {
-        "__event_id" : [ "RunBuildAction", "ExecuteMavenRunConfigurationAction", "ExtractManagedDependenciesAction", "IntroducePropertyAction", "ShowMavenConnectors", "KillMavenConnector", "StartLocalMavenServer", "StartWslMavenServer" ]
+        "__event_id" : [ "RunBuildAction", "ExecuteMavenRunConfigurationAction", "ExtractManagedDependenciesAction", "IntroducePropertyAction", "ShowMavenConnectors", "KillMavenConnector", "StartLocalMavenServer", "StartWslMavenServer", "CreateMavenProjectOrModuleFromArchetype", "CreateMavenProjectOrModule" ]
       }
     }
   }, {
@@ -823,7 +838,7 @@
         "value" : [ "{enum#backspace}", "{enum#trailingSpaces}", "{regexp#integer}", "{enum#caret_movement}" ]
       },
       "enums" : {
-        "_" : [ "caretAfterLineEnd", "caretInsideTabs", "virtualSpaceAtFileBottom", "softWraps", "softWraps.console", "softWraps.preview", "softWraps.relativeIndent", "softWraps.showAll", "ensureNewlineAtEOF", "quickDocOnMouseHover", "blinkingCaret", "blockCaret", "rightMargin", "lineNumbers", "gutterIcons", "foldingOutline", "showLeadingWhitespace", "showInnerWhitespace", "showTrailingWhitespace", "indentGuides", "animatedScroll", "dragNDrop", "wheelZoom", "mouseCamel", "inplaceRename", "preselectOnRename", "inlineDialog", "minimizeScrolling", "afterReformatNotification", "afterOptimizeNotification", "smartHome", "camelWords", "editor.inlay.parameter.hints", "breadcrumbsAbove", "all.breadcrumbs", "breadcrumbs", "intentionBulb", "richCopy", "parameterAutoPopup", "javadocAutoPopup", "completionAutoPopup", "autoPopupCharComplete", "autoCompleteBasic", "autoCompleteSmart", "parameterInfoFullSignature", "indentOnEnter", "braceOnEnter", "javadocOnEnter", "smartEnd", "autoCloseJavadocTags", "surroundByQuoteOrBrace", "pairBracketAutoInsert", "pairQuoteAutoInsert", "reformatOnRBrace", "bracesHighlight", "scopeHighlight", "identifierUnderCaretHighlight", "autoAddImports", "completionHints", "externalAnnotationsInline", "inferredAnnotationsInline", "tabExitsBracketsAndQuotes", "stripTrailingSpaces", "completionCaseSensitivity", "smartBackspace", "reformatOnPaste", "importsOnPaste", "show.actions.in.tooltip", "nextErrorActionGoesToErrorsFirst", "autoReparseDelay", "errorStripeMarkMinHeight", "suppressWarnings", "showMethodSeparators", "importHintEnabled", "caret.movement.line", "caret.movement.word", "renderDoc", "scriptletEndOnEnter", "blinkPeriod", "fileColorsEnabledForProjectView", "fileColorsEnabledForTabs", "fileColorsEnabled" ],
+        "_" : [ "caretAfterLineEnd", "caretInsideTabs", "virtualSpaceAtFileBottom", "softWraps", "softWraps.console", "softWraps.preview", "softWraps.relativeIndent", "softWraps.showAll", "ensureNewlineAtEOF", "quickDocOnMouseHover", "blinkingCaret", "blockCaret", "rightMargin", "lineNumbers", "gutterIcons", "foldingOutline", "showLeadingWhitespace", "showInnerWhitespace", "showTrailingWhitespace", "indentGuides", "animatedScroll", "dragNDrop", "wheelZoom", "mouseCamel", "inplaceRename", "preselectOnRename", "inlineDialog", "minimizeScrolling", "afterReformatNotification", "afterOptimizeNotification", "smartHome", "camelWords", "editor.inlay.parameter.hints", "breadcrumbsAbove", "all.breadcrumbs", "breadcrumbs", "intentionBulb", "richCopy", "parameterAutoPopup", "javadocAutoPopup", "completionAutoPopup", "autoPopupCharComplete", "autoCompleteBasic", "autoCompleteSmart", "parameterInfoFullSignature", "indentOnEnter", "braceOnEnter", "javadocOnEnter", "smartEnd", "autoCloseJavadocTags", "surroundByQuoteOrBrace", "pairBracketAutoInsert", "pairQuoteAutoInsert", "reformatOnRBrace", "bracesHighlight", "scopeHighlight", "identifierUnderCaretHighlight", "autoAddImports", "completionHints", "externalAnnotationsInline", "inferredAnnotationsInline", "tabExitsBracketsAndQuotes", "stripTrailingSpaces", "completionCaseSensitivity", "smartBackspace", "reformatOnPaste", "importsOnPaste", "show.actions.in.tooltip", "nextErrorActionGoesToErrorsFirst", "autoReparseDelay", "errorStripeMarkMinHeight", "suppressWarnings", "showMethodSeparators", "importHintEnabled", "caret.movement.line", "caret.movement.word", "renderDoc", "scriptletEndOnEnter", "blinkPeriod", "fileColorsEnabledForProjectView", "fileColorsEnabledForTabs", "fileColorsEnabled", "intentionPreview" ],
         "backspace" : [ "OFF", "AUTOINDENT", "INDENT" ],
         "caret_movement" : [ "NEIGHBOR", "NONE", "BOTH", "CURRENT", "START", "END" ],
         "no_" : [ "noCaretAfterLineEnd", "noCaretInsideTabs", "noVirtualSpaceAtFileBottom", "noSoftWraps", "noSoftWraps.console", "noSoftWraps.preview", "noSoftWraps.relativeIndent", "noSoftWraps.showAll", "noEnsureNewlineAtEOF", "noQuickDocOnMouseHover", "noBlinkingCaret", "noBlockCaret", "noRightMargin", "noLineNumbers", "noGutterIcons", "noFoldingOutline", "noShowLeadingWhitespace", "noShowInnerWhitespace", "noShowTrailingWhitespace", "noIndentGuides", "noAnimatedScroll", "noDragNDrop", "noWheelZoom", "noMouseCamel", "noInplaceRename", "noPreselectOnRename", "noInlineDialog", "noMinimizeScrolling", "noAfterReformatNotification", "noAfterOptimizeNotification", "noSmartHome", "noCamelWords", "noEditor.inlay.parameter.hints", "noBreadcrumbsBelow", "noBreadcrumbs", "noIntentionBulb", "noRichCopy", "noParameterAutoPopup", "noJavadocAutoPopup", "noCompletionAutoPopup", "noAutoPopupCharComplete", "noAutoCompleteBasic", "noAutoCompleteSmart", "noParameterInfoFullSignature", "noIndentOnEnter", "noBraceOnEnter", "noJavadocOnEnter", "noSmartEnd", "noAutoCloseJavadocTags", "noSurroundByQuoteOrBrace", "noPairBracketAutoInsert", "noPairQuoteAutoInsert", "noReformatOnRBrace", "noBracesHighlight", "noScopeHighlight", "noIdentifierUnderCaretHighlight", "noAutoAddImports", "noCompletionHints", "noExternalAnnotationsInline", "noInferredAnnotationsInline", "noTabExitsBracketsAndQuotes" ],
@@ -1998,6 +2013,7 @@
         "statistics_visit_all_projects_overhead" : [ "{regexp#integer}" ],
         "tests_executed" : [ "{enum#boolean}" ],
         "time_between_builds" : [ "{regexp#integer}" ],
+        "use_fir" : [ "{regexp#boolean_set}" ],
         "use_old_backend" : [ "{regexp#boolean_set}" ]
       },
       "enums" : {
@@ -2010,14 +2026,15 @@
         "js_target_mode" : "^((both|browser|nodejs|none)_?)+$",
         "jvm_defaults" : "^((disable|enable|compatibility|all|all-compatibility)_?)+$",
         "mpp_platforms" : "^((common|metadata|jvm|js|arm32|arm64|mips32|mipsel32|x64|android|androidApp|androidNativeArm|androidNativeArm32|android_arm32|androidNativeArm64|android_arm64|androidNative|androidNativeX86|androidNativeX64|iosArm|iosArm32|ios_arm32|iosArm64|ios_arm64|ios|ios_x64|iosSim|iosX64|watchos|watchosArm32|watchosArm64|watchosX86|tvos|tvosArm64|tvosX64|linux|linuxArm32Hfp|linux_arm32_hfp|linuxMips32|linux_mips32|linuxMipsel32|linux_mipsel32|linuxX64|linux_x64|macos|osx|macosX64|macos_x64|mingw|mingwX64|mingw_x64|mingwX86|mingw_X86|wasm32|wasm)_?)+$",
-        "plugin_version" : "(\\d+-)?\\d\\.\\d\\.\\d{1,3}-(dev|eap|release)-(\\d+-)?(AppCode|CLion|IJ|Studio)[0-9\\-\\.]+"
+        "plugin_version" : "(\\d+-)?\\d(\\.\\d)?\\.\\d{1,3}(-(dev|eap|release|M\\d?|RC\\d?))+-(\\d+-)?(AppCode|CLion|IJ|Studio|AS)[0-9\\-\\.]+"
       }
     }
   }, {
     "id" : "kotlin.gradle.target",
     "builds" : [ ],
     "versions" : [ {
-      "from" : "1"
+      "from" : "1",
+      "to" : "3"
     } ],
     "rules" : {
       "event_id" : [ "{enum#_}" ],
@@ -3895,7 +3912,7 @@
       "event_id" : [ "{enum#__event_id}" ],
       "event_data" : {
         "agree-to-load" : [ "{enum#boolean}" ],
-        "choice" : [ "{enum:IMPORT|OPEN_WITHOUT_IMPORTING|CANCEL}" ]
+        "choice" : [ "{enum:IMPORT|OPEN_WITHOUT_IMPORTING|CANCEL}", "{enum:TRUST_AND_OPEN|OPEN_IN_SAFE_MODE}" ]
       },
       "enums" : {
         "__event_id" : [ "load_untrusted_project_confirmation", "open_new_project", "project_implicitly_trusted_by_path", "project_implicitly_trusted_by_url", "read_more_from_notification_banner", "trust_host_checkbox_selected", "trust_project_from_notification_banner", "trust_location_checkbox_selected" ]
@@ -4087,7 +4104,7 @@
     "rules" : {
       "event_id" : [ "{enum#_}", "{enum#__event_id}" ],
       "event_data" : {
-        "algorithm" : [ "{enum#__algorithm}", "{enum:ONE_TIP_SURROUNDWITH_SUMMER2020|ONE_TIP_EXTENDSELECTION_SUMMER2020|ONE_TIP_SWITCHER_SUMMER2020|LOCAL_SORT_SUMMER2020}", "{enum:tip_utility_and_ignore_used|tip_utility}" ],
+        "algorithm" : [ "{enum#__algorithm}", "{enum:ONE_TIP_SURROUNDWITH_SUMMER2020|ONE_TIP_EXTENDSELECTION_SUMMER2020|ONE_TIP_SWITCHER_SUMMER2020|LOCAL_SORT_SUMMER2020}", "{enum:tip_utility_and_ignore_used|tip_utility}", "{enum:random_ignore_used}" ],
         "feature_id" : [ "{util#tip_info}" ],
         "filename" : [ "{util#tip_info}" ],
         "keep_showing_after" : [ "{enum#boolean}" ],
@@ -4368,10 +4385,13 @@
       "from" : "1"
     } ],
     "rules" : {
-      "event_id" : [ "commit.count.{regexp#count}", "branches.count.{regexp#count}", "users.count.{regexp#count}", "third.party.root.count.{regexp#count}", "{enum#vcs}.root.count.{regexp#count}", "{enum:dataInitialized}", "{enum:commit.count|branches.count|users.count|root.count}" ],
+      "event_id" : [ "commit.count.{regexp#count}", "branches.count.{regexp#count}", "users.count.{regexp#count}", "third.party.root.count.{regexp#count}", "{enum#vcs}.root.count.{regexp#count}", "{enum#__event_id}" ],
       "event_data" : {
         "count" : [ "{regexp#integer}" ],
         "vcs" : [ "{enum#vcs}", "{enum:third.party}" ]
+      },
+      "enums" : {
+        "__event_id" : [ "commit.count", "branches.count", "users.count", "root.count", "dataInitialized" ]
       }
     }
   }, {
@@ -4561,7 +4581,7 @@
   } ],
   "rules" : {
     "enums" : {
-      "boolean" : [ "true", "false", "TRUE", "FALSE" ],
+      "boolean" : [ "true", "false", "TRUE", "FALSE", "True", "False" ],
       "build_tools" : [ "Maven", "Gradle", "gradle", "sbt", "Clojure_Deps", "clojure_deps", "Pants", "pants", "bsp", "Kobalt", "kobalt", "undefined.system", "third.party", "SPM", "CompDB", "Compilation_Database", "Makefile" ],
       "keymaps" : [ "Mac_OS_X_10.5+", "$$default", "Default_for_GNOME", "Rider", "Eclipse", "Emacs", "Default_for_KDE", "Mac_OS_X", "ReSharper_OSX", "NetBeans_6.5", "Visual_Studio", "Rider_OSX", "TextMate", "Eclipse_(Mac_OS_X)", "ReSharper", "Xcode", "unknown", "custom", "Sublime_Text_(Mac_OS_X)", "Sublime_Text", "Default_for_XWin", "$default", "JBuilder", "VS_Code", "Visual_Studio_OSX", "Visual_Assist", "VSCode", "macOS_System_Shortcuts" ],
       "look_and_feel" : [ "Darcula", "IntelliJ", "Light", "High_contrast", "Dark_purple", "Cyan_light", "Rider_Dark", "Gray", "macOS_Light", "IntelliJ_Light", "Windows_10_Light", "Solarized_Dark", "Solarized_Light", "Monocai", "Xcode-Dark", "vuesion-theme", "Visual_Studio_Code_Dark_Plus", "Monokai_Pro", "Monokai_Pro_(Filter_Spectrum)", "Monokai_Pro_(Filter_Machine)", "Monokai_Pro_(Filter_Octagon)", "Monokai_Pro_(Filter_Ristretto)", "Atom_One_Dark", "NotReallyMDTheme", "Darcula_Darker", "Espresso_Light", "Spacegray", "Gradianto_Nature_Green", "Nord", "Obsidian", "Obsidian_Bright", "One_Dark", "Roboticket_Light", "Sublime", "Trash_Panda_Theme", "ReSharper_Dark", "ReSharper_Light", "Rider_Light", "Rider_Melon_Dark", "Rider_Melon_Light", "Visual_Assist_Dark", "Visual_Assist_Light", "Visual_Studio_Dark", "Visual_Studio_Light" ],
@@ -4582,5 +4602,5 @@
       "version" : "Unknown|unknown.format|unknown|UNKNOWN|((\\d+\\.?)*\\d+)"
     }
   },
-  "version" : "2168"
+  "version" : "2206"
 }

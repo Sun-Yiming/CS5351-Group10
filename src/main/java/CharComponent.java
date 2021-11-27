@@ -8,10 +8,10 @@ import java.awt.event.MouseListener;
 
 public class CharComponent implements Component{
 
-    public static final int DEFAULT_L = 30;
+    public static final int DEFAULT_L = 20;
     public static final String KEY = "char_transfer";
 //    public static final String DEFAULT_STRING = "， ,";
-    public static final String DEFAULT_STRING = "， , 。 . ： : ； ; ！ ! ？ ? ‘ ' ’ ' 【 [ 】 ] （ ( ） ) 「 { 」 } 《 < 》 >";
+    public static final String DEFAULT_STRING = "， , 。 . ： : ； ; ！ ! ？ ? ‘ ' ’ '";
     public static final int NUMP = 5;
     public static final int ENP = 120;
     public static final int CHP = 35;
@@ -60,9 +60,9 @@ public class CharComponent implements Component{
     }
 
     //生产组件
-    private void createField(int i, JBScrollPane jPanel, int type){
+    private void createField(int i, JPanel jPanel, int type){
         JTextField jt = new JTextField();
-        jt.setBounds(type + (i / 15) * 300, 32 * (i % 15), 60, 32);
+        jt.setBounds(type + (i / 10) * 300, 32 * (i % 10), 60, 32);
 
         if (type == ENP){
 //            jt.setText(i<defaultStrs.length/2 ? defaultStrs[2*i+1] : "");
@@ -80,15 +80,15 @@ public class CharComponent implements Component{
 
     }
 
-    private void createLabel(int i, JBScrollPane jPanel, int type){
+    private void createLabel(int i, JPanel jPanel, int type){
         JLabel jl = new JLabel();
 
         if(type == SIGNP){
-            jl.setBounds(type + (i / 15) * 300, 32 * (i % 15), 25, 32);
+            jl.setBounds(type + (i / 10) * 300, 32 * (i % 10), 25, 32);
             jl.setText("=>");
         }
         else if(type == NUMP){
-            jl.setBounds(type + (i / 15) * 300, 32 * (i % 15), 30, 32);
+            jl.setBounds(type + (i / 10) * 300, 32 * (i % 10), 30, 32);
             jl.setText((i+1)+".");
         }
         jl.setHorizontalAlignment(JLabel.CENTER);
@@ -102,7 +102,7 @@ public class CharComponent implements Component{
         JLabel btn = new JLabel();
         btn.setText("reset");
         btn.setForeground(Color.RED);
-        btn.setBounds(30, 32 * 15, 60, 32);
+        btn.setBounds(30, 32 * 10, 60, 32);
         btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 //        btn.addMouseListener(new MouseListener() {
 //            @Override
@@ -146,7 +146,7 @@ public class CharComponent implements Component{
 
     //初始化JPanel面板
     @Override
-    public void init(JBScrollPane jPanel){
+    public void init(JPanel jPanel){
         charEn = new JTextField[DEFAULT_L];
         charCh = new JTextField[DEFAULT_L];
 //        initList();

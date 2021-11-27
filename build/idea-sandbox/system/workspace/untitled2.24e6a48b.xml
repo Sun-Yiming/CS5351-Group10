@@ -1,0 +1,38 @@
+<project version="4">
+  <component name="PermissionStore">
+    <excludedFiles>
+      <Path>$PROJECT_DIR$/.idea</Path>
+    </excludedFiles>
+    <fileAccess>Readonly</fileAccess>
+    <terminalAccess>Readonly</terminalAccess>
+    <runAccess>Readonly</runAccess>
+    <toolWindowAccess>Disabled</toolWindowAccess>
+  </component>
+  <component name="ProjectUserFactors">
+    <factor id="completionFinishedType">
+      <dailyData date="17-11-2021">
+        <observation name="cancelled" value="5.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionType">
+      <dailyData date="17-11-2021">
+        <observation name="BASIC" value="3.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionUsage">
+      <dailyData date="17-11-2021">
+        <observation name="count" value="5.0" />
+      </dailyData>
+    </factor>
+    <factor id="itemPosition" />
+    <factor id="mnemonicsUsage" />
+    <factor id="prefixLength" />
+    <factor id="prefixMatchingType" />
+    <factor id="timeBetweenTyping">
+      <dailyData date="17-11-2021">
+        <observation name="average" value="213.0" />
+        <observation name="count" value="1.0" />
+      </dailyData>
+    </factor>
+  </component>
+</project>

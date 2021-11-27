@@ -10,6 +10,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;
 
+
 import java.util.*;
 
 public class CharacterReplaceHandler implements TypedActionHandler {
@@ -19,7 +20,8 @@ public class CharacterReplaceHandler implements TypedActionHandler {
 
     private TypedActionHandler typedActionHandler;
     private char lastChar = ' ';
-    private Stack<Integer> lastSignPos = new Stack<>();
+//    private Stack<Integer> lastSignPos = new Stack<>();
+    private List<Integer> lastSignPos = new ArrayList<Integer>();
 
     static {
         reload();
@@ -61,29 +63,62 @@ public class CharacterReplaceHandler implements TypedActionHandler {
         //找到对应的英文字符
         String enChar = cnCharMap.get(String.valueOf(c));
 
-        if(c == ' '){
-            if(!lastSignPos.isEmpty()){
+        if(c == ' ') {
+            if (!lastSignPos.isEmpty()) {
                 Runnable runnable = () -> {
-                    //获取目标#的值
-                    String target = document.getText(new TextRange(lastSignPos.peek(), caretOffset));
-                    //如果获取有映射值
-                    if(colorKeys.contains(target)) {
-                        //key的长度
-                        int len = target.length();
 
-                        document.deleteString(lastSignPos.peek(), caretOffset);
-                        document.insertString(lastSignPos.peek(), colorMap.get(target));
-                        primaryCaret.moveToOffset(caretOffset-len+6);
-                        lastSignPos.pop();
+                    for (int i=0; i<lastSignPos.size(); i++){
+                        //获取目标#的值
+//                        String target = document.getText(new TextRange(lastSignPos.peek(), caretOffset));
+                        String target = document.getText(new TextRange(lastSignPos.get(i), caretOffset));
+
+                        //如果获取有映射值
+                        if (colorKeys.contains(target)) {
+                            //key的长度
+                            int len = target.length();
+
+                            document.deleteString(lastSignPos.get(i), caretOffset);
+                            document.insertString(lastSignPos.get(i), colorMap.get(target));
+                            primaryCaret.moveToOffset(caretOffset - len + 6);
+                            lastSignPos.remove(i);
+                        } else {
+//                        translate
+                            int len = target.length();
+                            String transtext = null;
+                            try {
+                                transtext = Translate.dotrans(target);
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                            document.deleteString(lastSignPos.get(i), caretOffset);
+                            document.insertString(lastSignPos.get(i), transtext);
+                            primaryCaret.moveToOffset(caretOffset - len + transtext.length());
+                            lastSignPos.remove(i);
+                        }
+
                     }
+
+
                 };
+//
                 WriteCommandAction.runWriteCommandAction(project, runnable);
             }
         }
         //刷新最新一个#的位置
         if(c == '#'){
-            lastSignPos.push(caretOffset+1);
+//            lastSignPos.push(caretOffset+1);
+
+            Runnable runnable = () -> {
+                for (int i=0; i<lastSignPos.size(); i++){
+                    if (lastSignPos.get(i)>(caretOffset+1)){
+                        lastSignPos.set(i,lastSignPos.get(i)+1);
+                    }
+                }
+            };
+            lastSignPos.add(caretOffset+1);
+            WriteCommandAction.runWriteCommandAction(project, runnable);
         }
+
         if (enChar != null) {
             //修改中文字符
             if(lastChar == '/'){
