@@ -1,11 +1,17 @@
 # CS5351-Group10
 
 group memebers:
+
 Yiming  Sun 		56878409
+
 Chenhao Zhang		56654309
+
 Wenhao Xia			56817115
+
 Wei Zhao			56796569
+
 Lei Zhang			56730372
+
 Zihao Wei			54774508
 
 
